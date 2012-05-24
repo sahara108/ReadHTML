@@ -8,14 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import <MessageUI/MFMailComposeViewController.h>
-#import "SBUTweetsActiclesTextOnlyContentProvider.h"
 
 @interface FirstViewController : UIViewController<UIWebViewDelegate,NSURLConnectionDelegate,NSURLConnectionDataDelegate>
 
 @property (nonatomic, retain) IBOutlet UIWebView *webView;
 @property (nonatomic, retain) NSMutableData *receivedData;
 @property (nonatomic, retain) NSString *htmlString;
-@property (nonatomic, retain) SBUTweetsActiclesTextOnlyContentProvider *parser;
-@property (nonatomic, assign) CGFloat scaleFactor;
+@property (nonatomic, assign) CGFloat maxHTMLWidth;
 
 @end
